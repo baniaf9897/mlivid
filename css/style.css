@@ -1,0 +1,11 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Alata', sans-serif;
+}
+header{
+    height:50px;
+}
+.content{
+    padding: 0px 50px;
+}
