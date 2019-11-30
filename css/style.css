@@ -3,11 +3,39 @@
     padding:0px;
     font-family: 'Alata', sans-serif;
 }
+footer{
+    height: 100px;
+    padding:10px 50px;
+}
 header{
-    height:50px;
+    display:flex !important;
+    flex-direction: row;
+    height:70px;
+    padding:10px 50px;
+    align-items: center;
+}
+header a{
+    padding:20px;
+    text-decoration: none;
+    
+}
+header a:hover{
+    color: darkblue;
+    text-decoration: none;
+
+}
+header .header-left{
+    text-align: left;
+    width:50%;
+}
+header .header-right{
+    text-align: right;
+    width:50%;
+
 }
 .content{
-    padding: 0px 50px;
+    padding: 50px 50px;
+    background-color: rgba(0,0,0,0.1);
 }
 .grid{
     display:grid;
@@ -17,14 +45,18 @@ header{
     justify-items: center;
 }
 .tile{
+    width:150px;
     margin:50px;
+    border-radius: 25px;
 }
-img{
-    width:100px;
+.tile:hover{
+    transform: scale(1.1);
 }
-.card-body{
-    grid-column: 1/-1;
+.tile img{
+    width:100%;
 }
-#aaa{
-    grid-column: 1/-1 !important;
+.collapse{
+    grid-column: 1/-1 ;
+    width:100%;
+    max-width:1200px
 }

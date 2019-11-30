@@ -8,26 +8,35 @@
     </head>
     <body>
         <header>
-            <ul>
-                <li>
-                    <a href="index.html">home</a>
-                </li>
-            </ul>
+            <div class="header_left">
+                <a href="index.html">mlivid</a>
+                /
+                <a href="sound.html">sonic</a>
+            </div>
+            <div class="header_right">
+                <a href="sound.html">sonic</a>
+                <a href="photo.html">visual</a>
+                <a href="blog.html">blog</a>
+            </div>
         </header>
         <div class="content">
             <div class="grid">
+                <!--wichtig das href des img und die id des div "collapse" müssen eineindeutig und die gleichen-->
                 <div class = "tile"> 
-                    <img src="cover.png" data-toggle="collapse" href="#aaa" role="button" aria-expanded="false" aria-controls="collapseExample"/>
+                    <img src="images/Livid Cheese COVER715/12 spacetime715.jpg" data-toggle="collapse" href="#spacetime" role="button" aria-expanded="false" aria-controls="collapseExample"/>
                 </div>
-                <div class="collapse" id="aaa">
+                <div class="collapse" id="spacetime">
                     <div class="card card-body">
-                        <h2>Titel</h2>
-                        <h2>Description</h2>
-                        <iframe width="50%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/706743538&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                        <h3>Spacetime</h3>
+                        <h3>ficki ficki</h3>
+                        <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/706743538&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                     </div>
                 </div>
             </div>
         </div>
+        <footer>
+            <h2>footer</h2>
+        </footer>
     </body>
     <script src="script/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
