@@ -21,12 +21,12 @@ header{
     overflow:auto;
     background-color: white;
 }
-header a{
+a{
     padding:20px;
     text-decoration: none;
     
 }
-header a:hover{
+a:hover{
     color: darkblue;
     text-decoration: none;
 
@@ -95,9 +95,14 @@ body{
 
 .tile .cover{
     width:100%;
+    border-radius: 3px;
 }
 .full_row{
     grid-column: 1/-1 ;
     width:100%;
     max-width:1200px;
+}
+
+.card h3{
+    padding:5px;
 }
