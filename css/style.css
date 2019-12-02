@@ -1,7 +1,7 @@
 *{
     margin:0px;
     padding:0px;
-    font-family: 'Alata', sans-serif;
+    font-family: 'Avenir', sans-serif;
     position:relative;
 }
 footer{
@@ -19,7 +19,10 @@ header{
     padding:10px 50px;
     align-items: center;
     overflow:auto;
-    background-color: white;
+    background-color: #000000;
+    background-image: url(images/design/16zu9_drain_full_yellow.jpg); 
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
 }
 a{
     padding:20px;
@@ -27,7 +30,7 @@ a{
     
 }
 a:hover{
-    color: darkblue;
+    color: rgb(248, 225, 16);
     text-decoration: none;
 
 }
@@ -64,8 +67,8 @@ body{
     justify-items: center;
 }
 .tile{
-    width:150px;
-    margin:50px;
+    width:200px;
+    margin:0px;
 }
 .cover{
     margin:20px;
@@ -75,7 +78,7 @@ body{
 }
 .cover:hover{
     cursor:pointer;
-    animation:float 0.5s ease-in-out;
+    animation:float 0.4s ease-in-out;
 }
 @keyframes float {
 	0% {
@@ -84,7 +87,7 @@ body{
 	}
 	50% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.1);
-		transform: translatey(-5px);
+		transform: translatey(5px);
 	}
 	100% {
 		box-shadow: 0 0px 0px 0px rgba(0,0,0,0.3);
