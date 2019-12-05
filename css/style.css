@@ -20,6 +20,7 @@ header{
     align-items: center;
     overflow:auto;
     background-color: white;
+    z-index: 100;
 }
 a{
     padding:20px;
