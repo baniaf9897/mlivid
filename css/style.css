@@ -148,5 +148,5 @@ body{
     grid-template-rows:1;
     background-image: url(../test.jpg);
     background-size: cover;
-    height: 80vh;;
+    height: 80vh;
 }
