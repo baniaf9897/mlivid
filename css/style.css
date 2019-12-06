@@ -112,13 +112,41 @@ body{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-self: center;
+   
+}
+.list_wrapper{
+    display:grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    background-color: rgba(0,0,0,0.7);
+    height:100%;
     grid-column: 3;
 
+}
+.vertical_list li{
+    
+    padding:10px;
+    margin: 20px 0px;
+    text-align: center;
+    
+}
+.list_wrapper .vertical_list button{
+    padding:10px;
+    border:0;
+    font-size: 100%;
+    font-family: inherit;
+    color:white;
+    background-color:rgba(0,0,0,0);
+}
+.vertical_list button:hover{
+    border:1px solid white;
 }
 .image_container{
     display:grid;
     grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows:1;
     background-image: url(../test.jpg);
     background-size: cover;
-    height: 90vh;;
+    height: 80vh;;
 }
