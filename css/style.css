@@ -3,6 +3,7 @@
     padding:0px;
     font-family: 'Alata', sans-serif;
     position:relative;
+    line-height: 1.5;
 }
 footer{
     height: 100px;
@@ -27,7 +28,7 @@ header{
     max-width:2000px;
 }
 a{
-    padding:20px;
+    padding:10px;
     text-decoration: none;
     
 }
@@ -79,21 +80,6 @@ body{
     cursor:pointer;
     animation:float 0.5s ease-in-out;
 }
-@keyframes float {
-	0% {
-		box-shadow: 0 0px 0px 0px rgba(0,0,0,0.3);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.1);
-		transform: translatey(-5px);
-	}
-	100% {
-		box-shadow: 0 0px 0px 0px rgba(0,0,0,0.3);
-		transform: translatey(0px);
-	}
-}
-
 
 .tile .cover{
     width:100%;
@@ -106,8 +92,16 @@ body{
 }
 
 .card h3{
-    padding:5px;
+    padding:15px 25px;
 }
+
+.card div{
+    padding:15px 25px;
+}
+.card .links a{
+    padding:5px 0px;
+}
+
 .vertical_list{
     display:flex;
     flex-direction: column;
@@ -150,3 +144,34 @@ body{
     background-size: cover;
     height: 80vh;
 }
+.row{
+    display:flex;
+    flex-direction: row;
+    align-items:top;
+    justify-content: center;
+}
+.column{
+    display:flex;
+    flex-direction: column; 
+}
+
+.half_width{
+    width:50%;
+}
+
+
+@keyframes float {
+	0% {
+		box-shadow: 0 0px 0px 0px rgba(0,0,0,0.3);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.1);
+		transform: translatey(-5px);
+	}
+	100% {
+		box-shadow: 0 0px 0px 0px rgba(0,0,0,0.3);
+		transform: translatey(0px);
+	}
+}
+

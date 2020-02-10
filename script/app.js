@@ -7,10 +7,10 @@ if($(".image_container") !== null){
     $.getJSON('../data/imageCollections.json', function(data) {         
         var imageCollections = data;
         
-        // imageCollections.forEach(collection => {
-        //     var container = document.createElement("div");
-        //     container.innerHTML=collection.name;
-        //     document.getElementsByClassName("image_container")[0].appendChild(container);
-        // });
+        imageCollections.forEach(collection => {
+            var container = document.createElement("div");
+            container.innerHTML=collection.name;
+            document.getElementsByClassName("image_container")[0].appendChild(container);
+        });
     });
 };
