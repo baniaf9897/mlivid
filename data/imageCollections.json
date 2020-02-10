@@ -1,23 +1,26 @@
 [
     {
-        "name":"test",
+        "name":"test1",
+        "id":"1",
         "description":"testtesttesttesttest",
-        "thumbnail":"test.png",
-        "images":"test.png,test1.png,test3.png",
+        "thumbnail":"images/Livid Cheese COVER715/15_unnawatah715.jpg",
+        "images":["test.png","test1.png","test2.png"],
         "date":"testtesttest"
     },
     {
-        "name":"test",
+        "name":"test2",
+        "id":"2",
         "description":"testtesttesttesttest",
-        "thumbnail":"test.png",
-        "images":"test.png,test1.png,test3.png",
+        "thumbnail":"images/Livid Cheese COVER715/14_tot715.jpg",
+        "images":["test.png","test1.png","test2.png"],
         "date":"testtesttest"
     },
     {
-        "name":"test",
+        "name":"test3",
+        "id":"3",
         "description":"testtesttesttesttest",
-        "thumbnail":"test.png",
-        "images":"test.png,test1.png,test3.png",
+        "thumbnail":"images/Livid Cheese COVER715/16_Zundkerze_desaturated715.jpg",
+        "images":["test.png","test1.png","test2.png"],
         "date":"testtesttest"
     }
 ]
