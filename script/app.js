@@ -14,6 +14,7 @@ var imageCollections;
 
         var carousel_item = document.createElement("div");
         carousel_item.classList += "carousel-item";
+        //first element is active .... to change, just choose another id (newest one = imageCollections.length - 1)
         if(collection.id == 0){
             carousel_item.classList += " active";
             showImagesOfCollection(collection);
