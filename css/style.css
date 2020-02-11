@@ -72,7 +72,12 @@ body{
     margin:50px;
 }
 .collection_images .tile{
-    width:400px;
+    width:300px;
+}
+.collection_images .grid{
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    max-width:2000px;
+
 }
 .cover{
     margin:20px;

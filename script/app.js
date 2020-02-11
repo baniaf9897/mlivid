@@ -28,8 +28,8 @@ function log(collection){
     var image_container = $(".image_container")[0];
     var heading = $(".collection_heading")[0];
     var description = $(".collection_description")[0];
-    var collection_images = $(".collection_images")[0];
-
+    var collection_images = $("#images_grid")[0];
+    console.log(collection_images);
     image_container.style.backgroundImage = "url('" + collection.thumbnail + "')"
     heading.innerText = collection.name;
     description.innerText = collection.description;
