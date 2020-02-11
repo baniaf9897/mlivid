@@ -2,15 +2,15 @@
     {
         "name":"test1",
         "id":"1",
-        "description":"testtesttesttesttest",
+        "description":"blablabla",
         "thumbnail":"images/Livid Cheese COVER715/15_unnawatah715.jpg",
-        "images":["test.png","test1.png","test2.png"],
+        "images":["images/Livid Cheese COVER715/15_unnawatah715.jpg","images/Livid Cheese COVER715/15_unnawatah715.jpg","images/Livid Cheese COVER715/15_unnawatah715.jpg"],
         "date":"testtesttest"
     },
     {
         "name":"test2",
         "id":"2",
-        "description":"testtesttesttesttest",
+        "description":"bliublublu",
         "thumbnail":"images/Livid Cheese COVER715/14_tot715.jpg",
         "images":["test.png","test1.png","test2.png"],
         "date":"testtesttest"
@@ -18,7 +18,7 @@
     {
         "name":"test3",
         "id":"3",
-        "description":"testtesttesttesttest",
+        "description":"bliblibli",
         "thumbnail":"images/Livid Cheese COVER715/16_Zundkerze_desaturated715.jpg",
         "images":["test.png","test1.png","test2.png"],
         "date":"testtesttest"

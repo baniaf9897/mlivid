@@ -57,6 +57,7 @@ body{
     margin-top:70px;
     padding: 50px 50px;
     background-color: rgba(0,0,0,0.1);
+    height:100vh;
 }
 .grid{
     display:grid;
@@ -64,10 +65,14 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
     grid-gap: 1rem;
     justify-items: center;
+    max-width:2000px;
 }
 .tile{
     width:150px;
     margin:50px;
+}
+.collection_images .tile{
+    width:400px;
 }
 .cover{
     margin:20px;
@@ -142,7 +147,8 @@ body{
     grid-template-rows:1;
     background-image: url(../test.jpg);
     background-size: cover;
-    height: 80vh;
+    height: 70vh;
+    max-width: 1500px;
 }
 .row{
     display:flex;
@@ -159,6 +165,10 @@ body{
     width:50%;
 }
 
+.content div{
+    padding:15px 25px;
+
+}
 
 @keyframes float {
 	0% {
