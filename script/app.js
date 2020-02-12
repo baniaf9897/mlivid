@@ -1,9 +1,13 @@
 
+
+var imageCollections;
+
+//disable autoplay-carousel shit
 $('.carousel').carousel({
     interval: false
 }); 
 
-var imageCollections;
+//read json data
  $.getJSON('../data/imageCollections.json', function(data) {   
 
     imageCollections = data;
@@ -46,10 +50,6 @@ var imageCollections;
         carouselInner.appendChild(carousel_item);
     });
 
-
-
-
-
  });
 
 $('.cover').click( function(e) {
@@ -69,9 +69,6 @@ $(".carousel").on('slide.bs.carousel', function (event) {
     };
   });
 
-
-
-
   function showImagesOfCollection(collection){
  
     var collection_images = $("#images_grid")[0];
@@ -84,91 +81,26 @@ $(".carousel").on('slide.bs.carousel', function (event) {
         var image_element = document.createElement("img");
         image_element.src  = image;
         image_element.classList += "cover";
-        
+        image_element.onclick = function (event){
+            showFullScreenImage(image);
+        };
+
         image_element_container.appendChild(image_element);
         collection_images.appendChild(image_element_container);
     });
-
-  }
-
-/*
-if($(".image_container") !== null){
-    var button_list = $(".vertical_list")[0];
-    button_list.innerHTML = "";
-
-    $.getJSON('../data/imageCollections.json', function(data) {         
-        var imageCollections = data;
-        
-        imageCollections.forEach(collection => {
-            var container = document.createElement("li");
-            var button = document.createElement("button");
-        
-            button.innerText = collection.name;
-        
-            container.appendChild(button);
-            button_list.appendChild(container);
-
-            button.addEventListener('click', function(){
-                generateDOM(collection);
-               // adaptButtonList(collection.id, imageCollections);
-            });
-        });
-    });
-};
-
-function generateDOM(collection){
-    var image_container = $(".image_container")[0];
-    var heading = $(".collection_heading")[0];
-    var description = $(".collection_description")[0];
-    var collection_images = $("#images_grid")[0];
-    
-    //remove all childs first
-    collection_images.innerHTML = "";
-
-    image_container.style.backgroundImage = "url('" + collection.thumbnail + "')"
-    heading.innerText = collection.name;
-    description.innerText = collection.description;
-
-    collection.images.forEach(image =>{
-
-        var image_element_container = document.createElement("div");
-        image_element_container.classList += "tile";
-        var image_element = document.createElement("img");
-        image_element.src  = image;
-        image_element.classList += "cover";
-        
-        image_element_container.appendChild(image_element);
-        collection_images.appendChild(image_element_container);
-    });
-};
+  };
 
 
-function adaptButtonList(currentId, imageCollections){
-   
-    var button_list = $(".vertical_list")[0];
-    button_list.innerHTML = ""
+function showFullScreenImage(image){
+    var modal = $(".modal_background")[0];
+    var modal_content = $("#modal")[0];
+    console.log(modal_content);
+    console.log(modal);
 
-
-    console.log(imageCollections);
-    console.log(currentId);
-
-    for(var i = -1; i < 2; i++){
-
-        if(currentId + i >= 0 && currentId + i < imageCollections.length){
-            
-            console.log(currentId + i);
-            var collection = imageCollections[currentId +i];
-
-            var container = document.createElement("li");
-            var button = document.createElement("button");
-        
-            button.addEventListener('click', function(){
-                generateDOM(collection);
-            });
-            button.innerText = collection.name;
-        
-            container.appendChild(button);
-            button_list.appendChild(container);
-        }
-    }
-}*/
+    modal.style.display = "block";
+    modal_content.style.backgroundImage = "url('" + image + "')";
+}
+function hideFullScreenImage(){
+    var modal = $(".modal_background")[0];
+    modal.style.display = "none";
+}

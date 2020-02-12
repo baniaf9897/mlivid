@@ -71,6 +71,9 @@ body{
     width:200px;
     margin:10px;
 }
+.collection_images{
+    padding-top: 50px;
+}
 .collection_images .tile{
     width:300px;
 }
@@ -196,7 +199,30 @@ body{
     width:50%;
 }
 
+.modal_background{
+    z-index: 100;
+    display:none;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background-color: rgba(0,0,0,0.9);
+}
 
+#modal{
+    top:50%;
+    transform: translateY(-50%);
+    width:70%;
+    height:70%;
+    max-width: 1200px;
+    max-height: 1200px;
+    margin:auto;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+  
+}
 @keyframes float {
 	0% {
 		box-shadow: 0 0px 0px 0px rgba(0,0,0,0.3);
