@@ -221,8 +221,16 @@ body{
     background-position: center;
     background-repeat: no-repeat; 
     background-size: contain;
-  
-}
+ }
+ footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+ }
+ .footer-row{
+     justify-content: start;
+ }
 @keyframes float {
 	0% {
 		box-shadow: 0 0px 0px 0px rgba(0,0,0,0.3);
