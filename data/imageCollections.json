@@ -1,10 +1,10 @@
 [
     {
-        "name":"test1",
+        "name":"baltikum",
         "id":0,
-        "description":"blablabla",
+        "description":"beschreibung",
         "thumbnail":"images/Livid Cheese COVER715/15_unnawatah715.jpg",
-        "images":["images/Livid Cheese COVER715/15_unnawatah715.jpg","images/Livid Cheese COVER715/15_unnawatah715.jpg","images/Livid Cheese COVER715/15_unnawatah715.jpg"],
+        "images":["images/Livid Cheese COVER715/15_unnawatah715.jpg","images/Livid Cheese COVER715/15_unnawatah715.jpg","images/Livid Cheese COVER715/15_unnawatah715.jpg","images/Livid Cheese COVER715/15_unnawatah715.jpg","images/Livid Cheese COVER715/15_unnawatah715.jpg","images/Livid Cheese COVER715/15_unnawatah715.jpg","images/Livid Cheese COVER715/15_unnawatah715.jpg"],
         "date":"testtesttest"
     },
     {
