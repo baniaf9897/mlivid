@@ -58,11 +58,8 @@ $('.cover').click( function(e) {
 
 $(".carousel").on('slide.bs.carousel', function (event) {
 
-    var active = $(event.target).find('.carousel-inner > .item.active');
-    var from = active.index();
     var next = $(event.relatedTarget);
     var to = next.index();
-    var direction = event.direction;
 
     if(imageCollections !== null){
         showImagesOfCollection(imageCollections[to - 2]);
